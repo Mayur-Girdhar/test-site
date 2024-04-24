@@ -26,10 +26,19 @@ pipeline:
                     command: echo hello world
                   timeout: ""
                   type: Run
+              - step:
+                  type: Run
+                  name: build-run-step
+                  identifier: buildrunstep
+                  spec:
+                    shell: Sh
+                    command: |
+                      ls 
+                      pwd 
           platform:
-            arch: Amd64
             os: Linux
+            arch: Amd64
           runtime:
-            spec: {}
             type: Docker
+            spec: {}
         type: CI
