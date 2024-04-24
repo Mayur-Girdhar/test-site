@@ -35,6 +35,8 @@ pipeline:
                     command: |
                       ls 
                       pwd 
+                      cd /home/ubuntu/
+                      ls
           platform:
             os: Linux
             arch: Amd64
