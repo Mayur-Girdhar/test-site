@@ -1,0 +1,14 @@
+inputSet:
+  name: Build_Mayur_Girdhar_test_site_1713945540803-pr-trigger-input-set
+  identifier: Build_Mayur_Girdhar_test_site_1713945540803prtriggerinputset
+  orgIdentifier: default
+  projectIdentifier: mgpreprod
+  pipeline:
+    identifier: Build_Mayur_Girdhar_test_site_1713945540803
+    properties:
+      ci:
+        codebase:
+          build:
+            type: PR
+            spec:
+              number: <+trigger.prNumber>
